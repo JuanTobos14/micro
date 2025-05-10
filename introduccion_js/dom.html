@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Html</title>
+    <link rel="stylesheet" href="css/msg.css">
+</head>
+<body>
+    <h1 id="tituloA">Canguro</h1>
+    <br>
+    
+    <form>
+        <div>
+            <label>Nombre animal: </label>
+            <input id="anmInput" type="text" name="animal" required>
+        </div>
+        <button id="saludarAnm" type="button">Cambiar</button>
+    </form>
+
+    <h1 id="saludoA">Bienvenido... eh???</h1>
+
+    <form name="saludar">
+        <div>
+            <label id="nmLb">Nombre: </label>
+            <input id="nmInput" type="text" name="nombre" onkeyup="nmKeyDown()">
+            <p id="nmError" style="display: none;">CAMPO OBLIGATORIO</p>
+        </div>
+        <button type="submit">Saludar submit</button>
+    </form>
+
+    <!--Se pone al final para cargarlo sin utilizar un EVENTO-->
+    <script src="js/dom.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par o Impar</title>
+    <link rel="stylesheet" href="css/msg.css">
+</head>
+<body>
+    <h1 id="resp">Verificación de Par e Impar</h1>
+
+    <form name="capt">
+        <div>
+            <label id="nmLb">Número: </label>
+            <input id="nmInput" type="text" name="numero" onkeyup="parim()">
+            <p id="nError" style="display: none;">CAMPO OBLIGATORIO MAYOR A CERO</p>
+        </div>
+    </form>
+
+    <script src="js/parim.js"></script>
+</body>
+</html>
