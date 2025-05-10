@@ -12,20 +12,41 @@
             <h1>Contactos</h1>
         </header>
         <section>
-            <div>
+            <button id="crearBtn">Crear</button>
+
+            <div class="modal cerrar-modal">
                 <form name="contactoForm">
+                    <button type="button" id="cerrarModal">X</button>
                     <div>
-                        <label for="">Nombre</label>
+                        <label for="">Nombre:</label>
                         <input type="text" name="nombre" maxlength="50">
                     </div>
                     <div>
-                        <label for="">Email</label>
+                        <label for="">Email:</label>
                         <input type="email" name="correo">
                     </div>
+                    <br>
                     <div>
                         <button>Guardar</button>
                     </div>
                 </form>
+            </div>
+            
+            <div>
+                <table id="contactosTable">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3">No hay datos...</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
             
         </section>
